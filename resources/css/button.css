@@ -1,0 +1,19 @@
+.btn-primary {
+    @apply text-black bg-premier;
+}
+
+.btn-secondary {
+    @apply text-white bg-sekunder;
+}
+
+.btn-white {
+    @apply text-black bg-white;
+}
+
+.btn-black {
+    @apply text-white bg-black;
+}
+
+.btn-white-outline {
+    @apply text-white border border-white;
+}
