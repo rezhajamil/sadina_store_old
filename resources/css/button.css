@@ -17,3 +17,7 @@
 .btn-white-outline {
     @apply text-white border border-white;
 }
+
+.btn-red {
+    @apply text-white bg-red-600;
+}

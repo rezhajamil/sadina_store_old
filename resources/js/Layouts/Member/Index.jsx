@@ -5,7 +5,7 @@ export default function Member({ auth, children }) {
         <>
             <Head title="SADINA" />
             <div className="">
-                <main>{children}</main>
+                <main auth={auth}>{children}</main>
             </div>
         </>
     );

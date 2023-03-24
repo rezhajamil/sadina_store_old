@@ -29,39 +29,39 @@ import PrimaryButton from "./PrimaryButton";
 //                         SIGN UP
 //                     </SmallButton>
 //                 </Link>
-//                 <div class="flex items-center md:order-2">
+//                 <div className="flex items-center md:order-2">
 //                     <button
 //                         type="button"
-//                         class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+//                         className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
 //                         id="user-menu-button"
 //                         aria-expanded="false"
 //                         data-dropdown-toggle="user-dropdown"
 //                         data-dropdown-placement="bottom"
 //                     >
-//                         <span class="sr-only">Open user menu</span>
+//                         <span className="sr-only">Open user menu</span>
 //                         <img
-//                             class="w-8 h-8 rounded-full"
+//                             className="w-8 h-8 rounded-full"
 //                             src="/docs/images/people/profile-picture-3.jpg"
 //                             alt="user photo"
 //                         />
 //                     </button>
 //                     <div
-//                         class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+//                         className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
 //                         id="user-dropdown"
 //                     >
-//                         <div class="px-4 py-3">
-//                             <span class="block text-sm text-sekunder dark:text-white">
+//                         <div className="px-4 py-3">
+//                             <span className="block text-sm text-sekunder dark:text-white">
 //                                 Bonnie Green
 //                             </span>
-//                             <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
+//                             <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
 //                                 name@flowbite.com
 //                             </span>
 //                         </div>
-//                         <ul class="py-2" aria-labelledby="user-menu-button">
+//                         <ul className="py-2" aria-labelledby="user-menu-button">
 //                             <li>
 //                                 <a
 //                                     href="#"
-//                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+//                                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
 //                                 >
 //                                     Dashboard
 //                                 </a>
@@ -71,13 +71,13 @@ import PrimaryButton from "./PrimaryButton";
 //                     <button
 //                         data-collapse-toggle="mobile-menu-2"
 //                         type="button"
-//                         class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+//                         className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 //                         aria-controls="mobile-menu-2"
 //                         aria-expanded="false"
 //                     >
-//                         <span class="sr-only">Open main menu</span>
+//                         <span className="sr-only">Open main menu</span>
 //                         <svg
-//                             class="w-6 h-6"
+//                             className="w-6 h-6"
 //                             aria-hidden="true"
 //                             fill="currentColor"
 //                             viewBox="0 0 20 20"
@@ -96,8 +96,9 @@ import PrimaryButton from "./PrimaryButton";
 //     );
 // }
 
-const Navigation = () => {
+const Navigation = ({ auth }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showCart, setShowCart] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -112,7 +113,10 @@ const Navigation = () => {
                             SADINA STORE
                         </span>
                     </Link>
-                    <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <div className="absolute inset-y-0 right-0 flex items-center gap-x-4 sm:hidden">
+                        <button className="inline-block text-white sm:hidden">
+                            <i className="fa-solid fa-cart-shopping"></i>
+                        </button>
                         <button
                             className="inline-flex items-center justify-center p-2 text-lg font-bold text-white transition duration-150 ease-in-out rounded-md bg-sekunder hover:text-sekunder hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
                             aria-label="Main menu"
@@ -127,28 +131,40 @@ const Navigation = () => {
                         </button>
                     </div>
                     <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-end">
-                        <div className="flex-shrink-0"></div>
+                        <Link
+                            href="/about"
+                            className="hidden px-3 py-2 ml-6 mr-auto text-lg font-medium text-white underline rounded-md sm:inline-block focus:outline-none focus:text-white focus:bg-gray-700"
+                        >
+                            About
+                        </Link>
                         <div className="hidden sm:block sm:ml-6">
-                            <div className="flex gap-x-3">
-                                <Link
-                                    href="/about"
-                                    className="px-3 py-2 text-lg font-medium text-black underline rounded-md focus:outline-none focus:text-white focus:bg-gray-700"
-                                >
-                                    About
-                                </Link>
-                                <Link href={route("login")}>
-                                    <SmallButton variant="white">
-                                        <i className="mr-2 fa-solid fa-right-to-bracket"></i>
-                                        SIGN IN
-                                    </SmallButton>
-                                </Link>
-
-                                <Link href={route("register")}>
-                                    <SmallButton variant="black">
-                                        <i className="mr-2 fa-solid fa-user-plus"></i>
-                                        SIGN UP
-                                    </SmallButton>
-                                </Link>
+                            <div className="flex items-center h-full gap-x-3">
+                                <button className="text-white">
+                                    <i className="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                {auth.user ? (
+                                    <Link href={route("logout")} method="post">
+                                        <SmallButton variant="red">
+                                            <i className="mr-2 rotate-180 fa-solid fa-right-to-bracket"></i>
+                                            SIGN OUT
+                                        </SmallButton>
+                                    </Link>
+                                ) : (
+                                    <>
+                                        <Link href={route("login")}>
+                                            <SmallButton variant="white">
+                                                <i className="mr-2 fa-solid fa-right-to-bracket"></i>
+                                                SIGN IN
+                                            </SmallButton>
+                                        </Link>
+                                        <Link href={route("register")}>
+                                            <SmallButton variant="black">
+                                                <i className="mr-2 fa-solid fa-user-plus"></i>
+                                                SIGN UP
+                                            </SmallButton>
+                                        </Link>
+                                    </>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -168,25 +184,36 @@ const Navigation = () => {
                                 </PrimaryButton>
                             </Link>
                         </div>
-                        <Link href={route("login")}>
-                            <PrimaryButton
-                                variant="white"
-                                className="w-full text-center border-4"
-                            >
-                                <i className="mr-2 fa-solid fa-right-to-bracket"></i>
-                                SIGN IN
-                            </PrimaryButton>
-                        </Link>
+                        {auth.user ? (
+                            <Link href={route("logout")} method="post">
+                                <SmallButton variant="red">
+                                    <i className="mr-2 rotate-180 fa-solid fa-right-to-bracket"></i>
+                                    SIGN OUT
+                                </SmallButton>
+                            </Link>
+                        ) : (
+                            <>
+                                <Link href={route("login")}>
+                                    <PrimaryButton
+                                        variant="white"
+                                        className="w-full text-center border-4"
+                                    >
+                                        <i className="mr-2 fa-solid fa-right-to-bracket"></i>
+                                        SIGN IN
+                                    </PrimaryButton>
+                                </Link>
 
-                        <Link href={route("register")}>
-                            <PrimaryButton
-                                variant="black"
-                                className="w-full text-center border-4"
-                            >
-                                <i className="mr-2 fa-solid fa-user-plus"></i>
-                                SIGN UP
-                            </PrimaryButton>
-                        </Link>
+                                <Link href={route("register")}>
+                                    <PrimaryButton
+                                        variant="black"
+                                        className="w-full text-center border-4"
+                                    >
+                                        <i className="mr-2 fa-solid fa-user-plus"></i>
+                                        SIGN UP
+                                    </PrimaryButton>
+                                </Link>
+                            </>
+                        )}
                     </div>
                 </div>
             )}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Woman Fashion E-commerce</title>
+        <link
+            href="https://unpkg.com/tailwindcss@2.2.17/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                background-color: #e3d3d4;
+            }
+            .text-primary {
+                color: #0d3b66;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="flex flex-wrap items-center justify-between p-6 bg-white">
+            <div class="flex items-center flex-shrink-0 mr-6 text-primary">
+                <span class="text-xl font-semibold tracking-tight"
+                    >Brand Name</span
+                >
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded navbar-burger text-primary border-primary hover:text-primary hover:border-primary"
+                >
+                    <svg
+                        class="w-3 h-3 fill-current"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div
+                class="hidden navbar-menu lg:flex lg:flex-grow lg:items-center lg:w-auto"
+            >
+                <div class="text-sm lg:flex-grow">
+                    <a
+                        href="#"
+                        class="block mt-4 mr-4 lg:inline-block lg:mt-0 text-primary hover:text-primary"
+                        >Link 1</a
+                    >
+                    <a
+                        href="#"
+                        class="block mt-4 mr-4 lg:inline-block lg:mt-0 text-primary hover:text-primary"
+                        >Link 2</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="#"
+                        class="inline-block px-4 py-2 mt-4 text-sm leading-none border rounded text-primary border-primary hover:border-transparent hover:text-white hover:bg-primary lg:mt-0"
+                        >Login</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="px-4 py-12 bg-white sm:px-6 lg:py-16 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="lg:text-left">
+                    <h2
+                        class="text-base font-semibold tracking-wide uppercase text-primary"
+                    >
+                        New arrivals
+                    </h2>
+                    <h1
+                        class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-primary sm:text-4xl sm:leading-10"
+                    >
+                        Summer Collection
+                    </h1>
+                    <p class="max-w-2xl mt-4 text-lg leading-7 text-gray-500">
+                        Discover our new collection of women's clothing, shoes
+                        and accessories for summer.
+                    </p>
+                    <div class="mt-6">
+                        <a
+                            href="#"
+                            class="inline-block px-4 py-2 text-sm leading-none text-white border rounded bg-primary hover:bg-primary-darker"
+                            >Shop now</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Products -->
+        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-2xl font-extrabold tracking-tight text-primary">
+                Top Products
+            </h2>
+            <div
+                class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+            >
+                <!-- Product 1 -->
+                <div class="relative group">
+                    <div
+                        class="w-full h-56 overflow-hidden rounded-lg group-hover:opacity-75"
+                    >
+                        <img
+                            src="https://dummyimage.com/720x400/ccc/fff"
+                            alt="Product 1"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-sm font-medium text-primary">
+                        <a href="#">Product 1</a>
+                    </h3>
+                    <p class="mt-1 text-lg text-gray-900">$49</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="relative group">
+                    <div
+                        class="w-full h-56 overflow-hidden rounded-lg group-hover:opacity-75"
+                    >
+                        <img
+                            src="https://dummyimage.com/720x400/ccc/fff"
+                            alt="Product 2"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-sm font-medium text-primary">
+                        <a href="#">Product 2</a>
+                    </h3>
+                    <p class="mt-1 text-lg text-gray-900">$69</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="relative group">
+                    <div
+                        class="w-full h-56 overflow-hidden rounded-lg group-hover:opacity-75"
+                    >
+                        <img
+                            src="https://dummyimage.com/720x400/ccc/fff"
+                            alt="Product 3"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-sm font-medium text-primary">
+                        <a href="#">Product 3</a>
+                    </h3>
+                    <p class="mt-1 text-lg text-gray-900">$89</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="relative group">
+                    <div
+                        class="w-full h-56 overflow-hidden rounded-lg group-hover:opacity-75"
+                    >
+                        <img
+                            src="https://dummyimage.com/720x400/ccc/fff"
+                            alt="Product 4"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-sm font-medium text-primary">
+                        <a href="#">Product 4</a>
+                    </h3>
+                    <p class="mt-1 text-lg text-gray-900">$99</p>
+                </div>
+            </div>
+        </div>
+        <!-- Browse Products Section -->
+        <section class="py-20 bg-gray-100">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex justify-between">
+                    <div class="flex-1">
+                        <h2 class="mb-4 text-2xl font-bold text-gray-800">
+                            Browse Products
+                        </h2>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-end">
+                            <div class="relative mr-4">
+                                <input
+                                    type="search"
+                                    class="p-3 bg-white border-0 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                    placeholder="Search products..."
+                                />
+                                <div class="absolute top-0 right-0 mt-3 mr-3">
+                                    <svg
+                                        class="w-5 h-5 text-gray-400"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            d="M15.5 15.5L20 20M10 17C6.68629 17 4 14.3137 4 11C4 7.68629 6.68629 5 10 5C13.3137 5 16 7.68629 16 11C16 14.3137 13.3137 17 10 17Z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <select
+                                    class="p-3 bg-white border-0 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                >
+                                    <option selected disabled>Sort By</option>
+                                    <option value="price_asc">
+                                        Price (Low to High)
+                                    </option>
+                                    <option value="price_desc">
+                                        Price (High to Low)
+                                    </option>
+                                    <option value="name_asc">
+                                        Name (A - Z)
+                                    </option>
+                                    <option value="name_desc">
+                                        Name (Z - A)
+                                    </option>
+                                </select>
+                                <div class="absolute top-0 right-0 mt-3 mr-3">
+                                    <svg
+                                        class="w-5 h-5 text-gray-400"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-6">
+                    <div class="flex-none w-48">
+                        <h3 class="text-lg font-medium text-gray-900">
+                            Filter By
+                        </h3>
+                        <div class="mt-4">
+                            <h4 class="mb-4 font-medium text-gray-600">
+                                Category
+                            </h4>
+                            <ul>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="category[]"
+                                            value="dresses"
+                                        />
+                                        <span class="ml-2">Dresses</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="category[]"
+                                            value="top"
+                                        />
+                                        <span class="ml-2">Tops</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="category[]"
+                                            value="bottoms"
+                                        />
+                                        <span class="ml-2">Bottoms</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="category[]"
+                                            value="accessories"
+                                        />
+                                        <span class="ml-2">Accessories</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="mb-4 font-medium text-gray-600">Size</h4>
+                            <ul>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="size[]"
+                                            value="xs"
+                                        />
+                                        <span class="ml-2">XS</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="size[]"
+                                            value="s"
+                                        />
+                                        <span class="ml-2">S</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="size[]"
+                                            value="m"
+                                        />
+                                        <span class="ml-2">M</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="size[]"
+                                            value="l"
+                                        />
+                                        <span class="ml-2">L</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="checkbox"
+                                            class="form-checkbox"
+                                            name="size[]"
+                                            value="xl"
+                                        />
+                                        <span class="ml-2">XL</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="mb-4 font-medium text-gray-600">
+                                Price Range
+                            </h4>
+                            <div class="flex items-center">
+                                <span class="mr-2 text-gray-700">$</span>
+                                <input
+                                    type="text"
+                                    class="w-1/2 px-3 py-2 leading-tight text-gray-700 border rounded focus:outline-none focus:shadow-outline"
+                                    placeholder="Min"
+                                />
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <span class="mr-2 text-gray-700">$</span>
+                                <input
+                                    type="text"
+                                    class="w-1/2 px-3 py-2 leading-tight text-gray-700 border rounded focus:outline-none focus:shadow-outline"
+                                    placeholder="Max"
+                                />
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="mb-4 font-medium text-gray-600">
+                                Pre-order
+                            </h4>
+                            <ul>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="radio"
+                                            class="form-radio"
+                                            name="pre_order"
+                                            value="yes"
+                                        />
+                                        <span class="ml-2">Yes</span>
+                                    </label>
+                                </li>
+                                <li class="my-2">
+                                    <label class="inline-flex items-center">
+                                        <input
+                                            type="radio"
+                                            class="form-radio"
+                                            name="pre_order"
+                                            value="no"
+                                        />
+                                        <span class="ml-2">No</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 pb-8 bg-primary sm:pt-16">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+                        <div
+                            class="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8"
+                        >
+                            <div>
+                                <h3 class="text-sm font-medium text-white">
+                                    Shop
+                                </h3>
+                                <ul class="mt-6 space-y-6">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >New Arrivals</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Best Sellers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Trending</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Wishlist</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-white">
+                                    Company
+                                </h3>
+                                <ul class="mt-6 space-y-6">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Contact Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Career</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-white">
+                                    Legal
+                                </h3>
+                                <ul class="mt-6 space-y-6">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Terms and Conditions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Privacy Policy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-base text-gray-300 hover:text-white"
+                                            >Cookie Policy</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-medium text-white">
+                                Subscribe
+                            </h3>
+                            <p class="mt-6 text-base text-gray-300">
+                                Get notified about the latest sales and
+                                promotions.
+                            </p>
+                            <form class="flex flex-col mt-2 sm:flex-row">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="w-full px-4 py-2 text-base text-gray-900 placeholder-gray-500 border-gray-300 rounded-md focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white sm:max-w-xs"
+                                    placeholder="Enter your email"
+                                />
+                                <button
+                                    type="submit"
+                                    class="inline-flex items-center justify-center w-full px-4 py-2 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm sm:mt-0 sm:w-auto bg-secondary hover:bg-secondary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white"
+                                >
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mt-12 md:mt-16 xl:mt-0">
+                        <h3 class="text-sm font-medium text-white">
+                            Follow Us
+                        </h3>
+                        <div class="flex mt-6 space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white">
+                                <span class="sr-only">Facebook</span>
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M17.657 3c1.06 0 1.943.823 1.993 1.87l.007.26v14.94c0 1.048-.867 1.898-1.92 1.898H13.83v-6.978h2.236l.334-2.588H13.83v-1.65c0-.75.198-1.258 1.28-1.258l1.365-.001V6.785c-.235-.03-.785-.094-1.497-.094-1.474 0-2.483.896-2.483 2.54v1.423H9.506v2.588h2.236v6.978H6.36c-1.053 0-1.92-.85-1.92-1.898V5.13c0-1.047.867-1.898 1.92-1.898h11.297z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white">
+                                <span class="sr-only">Twitter</span>
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M23.954 4.569c-.885.389-1.83.653-2.824.772a4.667 4.667 0 0 0 2.045-2.575 9.325 9.325 0 0 1-2.955 1.13A4.66 4.66 0 0 0 16.32 2.98c-2.583 0-4.672 2.098-4.672 4.677 0 .367.042.725.122 1.07C8.233 7.594 4.372 5.06 1.79 1.733A4.702 4.702 0 0 0 1.46 7.19c0 1.62.82 3.046 2.068 3.889-.762-.023-1.477-.234-2.105-.583v.058c0 2.258 1.605 4.139 3.735 4.566-.78.214-1.604.233-2.4.088.683 2.062 2.655 3.565 4.994 3.604A9.34 9.34 0 0 1 0 20.082a13.198 13.198 0 0 0 7.17 2.11c8.582 0 13.273-7.004 13.273-13.071 0-.2-.005-.392-.015-.584a9.406 9.406 0 0 0 2.31-2.397l-.002-.003z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <footer class="bg-gray-900">
+            <div
+                class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"
+            >
+                <nav
+                    class="flex flex-wrap justify-center -mx-5 -my-2"
+                    aria-label="Footer"
+                >
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Contact
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Careers
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                    <div class="px-5 py-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Terms of Service
+                        </a>
+                    </div>
+                </nav>
+                <p class="mt-8 text-center text-gray-400">
+                    &copy; 2023 Women's Fashion. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
