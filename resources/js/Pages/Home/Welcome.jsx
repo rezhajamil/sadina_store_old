@@ -6,7 +6,7 @@ import { Link, Head } from "@inertiajs/react";
 import QuickNav from "./Partials/QuickNav";
 
 export default function Welcome(props) {
-    console.log(props.auth);
+    // console.log(props.auth);
     return (
         <>
             <Member auth>

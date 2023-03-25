@@ -5,7 +5,7 @@ import { ChevronUpIcon } from "@heroicons/react/24/solid";
 export default function QuickNav() {
     const [isScrolled, setIsScrolled] = useState(false);
     return (
-        <div className={`  ${isScrolled ? "h-fit" : "h-screen"}`}>
+        <div className={`py-4  ${isScrolled ? "h-fit" : "h-screen"}`}>
             <Transition
                 show={!isScrolled}
                 enter="transition transform duration-700 ease-out"
